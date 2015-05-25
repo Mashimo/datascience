@@ -69,3 +69,21 @@ X8 = [-1, -2, -4, -5, -8]
 print ("===8. Test Case X8 = -X5 = ", X8)
 checkValues("stdDev(X8)", stats.stdDev(X8), 2.449)  # same as X5
 checkValues("coeffVar(X8)", stats.coeffVar(X8), -0.612)
+
+X9 = [6,7,15,36,39, 40, 41,42,43,47,49]
+print("===9. Test case X9 (odd) = ", X9)
+(lo,up) = stats.quartiles(X9)
+checkValues("lower Q", lo, 15)
+checkValues("upper Q", up, 43)
+
+X10 = [7,15,36, 39,40,41]
+print("===10. Test case X10 (even) = ", X10)
+(lo,up) = stats.quartiles(X10)
+checkValues("lower Q", lo, 15)
+checkValues("upper Q", up, 40)
+
+X11 = [7.7,15.1,36.3, 39.3,40.0,41.1]
+print("===11. Test case X11 (even) = ", X11)
+(lo,up) = stats.quartiles(X11)
+checkValues("lower Q", lo, 15.1)
+checkValues("upper Q", up, 40)

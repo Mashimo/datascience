@@ -83,7 +83,7 @@ class statsTest(unittest.TestCase):
         self.assertRaises(TypeError, stats.coeffVar, *Z)
 
     def testSingleCoeffVar(self):
-            # passing only one data point to stdDev() must return zero (no deviation!)
+            # passing only one data point must return zero (no deviation!)
         self.assertEqual(stats.coeffVar([5]), 0.0)
           
     def testDefaultPrecisionCV(self):
@@ -94,7 +94,20 @@ class statsTest(unittest.TestCase):
         X = [1, 2, 2, 4, 3]
         self.assertEqual(stats.coeffVar(X,5), 0.42492)
 
-
+    # range
+    
+    def testRange(self):
+                # passing empty list must raise exception
+        Z = []
+        self.assertRaises(TypeError, stats.range, *Z)
+        
+    def testSingleRange(self):
+            # passing only one data point must return zero
+        self.assertEqual(stats.range([5]), 0)        
+        
+    def testNoRange(self):
+            # passing two equal data points must return zero
+        self.assertEqual(stats.range([5.3,5.3]), 0.0)
       
 if __name__ == "__main__":
     unittest.main()

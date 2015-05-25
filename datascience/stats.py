@@ -155,17 +155,58 @@ def stdDevOfLengths(L):
         strLen.append(len(i))
     
     return stdDev(strLen)
+  
+# === Measures of range ===
+def range(dataPoints):
+    if not dataPoints:
+        raise StatsError('no data points passed')
+        
+    return max(dataPoints) - min(dataPoints)
+
+def quartiles(dataPoints):
+    """
+    the lower and upper quartile
+    Arguments:
+        dataPoints: a list of data points, int or float
+
+    Returns:
+        the first and the last quarter in the sorted list, a tuple of float or int
+    """
+    if not dataPoints:
+        raise StatsError('no data points passed')
+        
+    sortedPoints = sorted(dataPoints)
+    mid = len(sortedPoints) / 2
     
+    if (len(sortedPoints) % 2 == 0):
+        # even
+        lowerQ = median(sortedPoints[:mid])
+        upperQ = median(sortedPoints[mid:])
+    else:
+        # odd
+        lowerQ = median(sortedPoints[:mid])
+        upperQ = median(sortedPoints[mid+1:])
+            
+    return (lowerQ, upperQ)
+
+# === Summary ===
+def summary(dataPoints):
+    if not dataPoints:
+        raise StatsError('no data points passed')
+        
+    print ("Summary statistics")
+    print ("Min      : ", min(dataPoints))
+    print ("Lower Qu.: ", quartiles(dataPoints)[0])
+    print ("Median   : ", median(dataPoints))
+    print ("Mean     : ", mean(dataPoints))
+    print ("Upper Qu.: ", quartiles(dataPoints)[1])
+    print ("Max      : ", max(dataPoints))
 
 # === Examples of usage ===
 
 if __name__ == "__main__":
     
     X = [10.3, 4.1, 12, 15.5, 20.2, 5.5, 15.5, 4.1]
-    Z = []
-    t = (3,4,9)
-    A = (1,1,2)
-    S = [25]
 
     print ("=== Stats library - Type help(stats.py) to see the available functions.")
     print ("Examples of usage these functions:")
@@ -175,3 +216,6 @@ if __name__ == "__main__":
     print ("mode(X) = ", mode(X), " and shall be two: 4.1 and 15.5")
     print ("stdDev(X) = ", stdDev(X), " and shall be 5.613")
     print ("coeffVar(X) = ", coeffVar(X), " and shall be 0.515")
+    print ("range(X) = ", range(X), " and shall be 16.1")
+    print ("------------------------------------------")
+    summary(X)
