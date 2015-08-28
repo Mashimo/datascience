@@ -38,12 +38,12 @@ def _getOccurencies(dataPoints):
     listOfTerms = {} # all terms found
 
     for x in dataPoints:
-		if x in listOfTerms:
-			listOfTerms[x] += 1
-		else:
-			listOfTerms[x] = 1
-					
-    return 	listOfTerms	
+        if x in listOfTerms:
+            listOfTerms[x] += 1
+        else:
+            listOfTerms[x] = 1
+                    
+    return listOfTerms    
 
 
     
@@ -78,7 +78,7 @@ def median(dataPoints):
         raise StatsError('no data points passed')
         
     sortedPoints = sorted(dataPoints)
-    mid = len(sortedPoints) / 2
+    mid = len(sortedPoints) // 2  # uses the floor division to have integer returned
     if (len(sortedPoints) % 2 == 0):
         # even
         return (sortedPoints[mid-1] + sortedPoints[mid]) / 2.0
@@ -176,7 +176,7 @@ def quartiles(dataPoints):
         raise StatsError('no data points passed')
         
     sortedPoints = sorted(dataPoints)
-    mid = len(sortedPoints) / 2
+    mid = len(sortedPoints) // 2 # uses the floor division to have integer returned
     
     if (len(sortedPoints) % 2 == 0):
         # even
