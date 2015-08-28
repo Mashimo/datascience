@@ -201,6 +201,7 @@ def summary(dataPoints):
     print ("Mean     : ", mean(dataPoints))
     print ("Upper Qu.: ", quartiles(dataPoints)[1])
     print ("Max      : ", max(dataPoints))
+    return "That's all" # this avoids printing None
 
 # === Examples of usage ===
 
