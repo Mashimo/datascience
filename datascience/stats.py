@@ -203,14 +203,14 @@ def summary(dataPoints):
     print ("Max      : ", max(dataPoints))
     return "That's all" # this avoids printing None
 
-# === Examples of usage ===
-
+# === Examples of usage : python stats.py ===
 if __name__ == "__main__":
     
     X = [10.3, 4.1, 12, 15.5, 20.2, 5.5, 15.5, 4.1]
 
     print ("=== Stats library - Type help(stats.py) to see the available functions.")
     print ("Examples of usage these functions:")
+    print ("-------------")
     print ("X= ", X)
     print ("mean(X) = ", mean(X), " and shall be 10.9")
     print ("median(X) = ", median(X), " and shall be 11.15")
@@ -218,5 +218,6 @@ if __name__ == "__main__":
     print ("stdDev(X) = ", stdDev(X), " and shall be 5.613")
     print ("coeffVar(X) = ", coeffVar(X), " and shall be 0.515")
     print ("range(X) = ", range(X), " and shall be 16.1")
-    print ("------------------------------------------")
+    print ("--------------")
+    print ("summary(X):")
     summary(X)

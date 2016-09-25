@@ -1,9 +1,14 @@
-# Practical Data Science with Python
-A collection of examples and tutorials
+# Grassroots Machine Learning
+A collection of examples and tutorials mainly in Python
 ## datascience
-Main repo. Contains the Stats module
+Simple library replicating several algorithms for educational purpose.  
+Contains the Stats module
+
+## Regression
+Examples and tutorials for supervised regression
+* Univariate linear regression
 
 ## visualization
-Contains plot examples done with matplotlib.pyplot which uses the Stats module
+Contains data visualization examples
 * Bar Chart 1 and 2
 * Box plot 
