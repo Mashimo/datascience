@@ -1,6 +1,0 @@
-{
-  "name": "Tidy Data - a tutorial in R and Python",
-  "tagline": "Get and clean data - an example tutorial",
-  "body": "### Welcome to the Tidy Data tutorial\r\nThis tutorial describes the transformations performed to convert the raw data (from wearables UCI repository) into a tidy data format.\r\n\r\n### Tidy data\r\nTidy is an adjective meaning \"arranged neatly and in order\", e.g. a table or a data frame where:\r\n\r\n* Each variable shall be in one column\r\n* Each different observation shall be in a different row\r\n* If the variable are of different types, one table for each kind of variable\r\n* If you have multiple tables, then shall include a column to link them\r\n\r\nThe general principles of tidy data are laid out by [Hadley Wickham] (http://had.co.nz/) in [this paper] (http://vita.had.co.nz/papers/tidy-data.pdf). You can find more information on [J.T. Leek repo] (https://github.com/Mashimo/datasharing).\r\n\r\n### The tutorial\r\nCheck out our [documentation](https://mashimo.wordpress.com)\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
