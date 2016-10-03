@@ -8,7 +8,11 @@ Contains the Stats module
 Examples and tutorials for supervised regression
 * Univariate linear regression
 
+## TidyData
+Examples abd tutorials for data wrangling
+
 ## visualization
 Contains data visualization examples
-* Bar Chart 1 and 2
+* Bar Chart
 * Box plot 
+* Scatter plot

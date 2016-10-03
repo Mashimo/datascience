@@ -1,5 +1,6 @@
+demo-np.py
 *statistics.py.html
 *.pyc
 datascience/*.pyc
 visualization/*.png
-
+webvisualization/*
