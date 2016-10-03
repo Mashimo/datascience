@@ -9,7 +9,7 @@ Examples and tutorials for supervised regression
 * Univariate linear regression
 
 ## TidyData
-Examples and tutorials for data wrangling
+[Examples and tutorials for data wrangling](http://mashimo.github.io/TidyData-Tutorial/)
 
 ## visualization
 Contains data visualization examples
