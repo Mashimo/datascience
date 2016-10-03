@@ -11,6 +11,9 @@ Examples and tutorials for supervised regression
 ## TidyData
 [Examples and tutorials for data wrangling](http://mashimo.github.io/TidyData-Tutorial/)
 
+## Classification
+[Example in R](http://mashimo.github.io/JHU-predict-class-wle/)
+
 ## visualization
 Contains data visualization examples
 * Bar Chart
