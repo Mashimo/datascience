@@ -4,6 +4,8 @@ import stats
 # === Unit tests for stats ===
 # use like this: python stats_unittest.py
 
+  # define a class inheriting from unittest.TestCase  
+  # that will contain as methods all the unit tests.
 class statsTest(unittest.TestCase):
 
     def SetUp(self):
@@ -108,6 +110,29 @@ class statsTest(unittest.TestCase):
     def testNoRange(self):
             # passing two equal data points must return zero
         self.assertEqual(stats.range([5.3,5.3]), 0.0)
-      
+        
+    # relations
+    def testCovarianceNull(self):
+                # passing empty list must raise exception
+        Z = []
+        self.assertRaises(TypeError, stats.covariance, *Z)
+
+    def testCovarianceOne(self):
+                # passing only one list must raise exception
+        Z = [1,2]
+        self.assertRaises(TypeError, stats.covariance, *Z)
+        
+    def testCovarianceDifferent(self):
+                # passing only one list must raise exception
+        Z = [1,2]
+        W = [3]
+        self.assertRaises(TypeError, stats.covariance, *Z, *W)
+
+    def testSinglecovariance(self):
+            # passing only one data point must return zero
+        Z = [2]
+        self.assertRaises(TypeError, stats.covariance, *Z)        
+
+
 if __name__ == "__main__":
     unittest.main()

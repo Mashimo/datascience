@@ -16,13 +16,14 @@ print ("===1. Test Case X1= ", X)
 checkValues("mean(X1)", stats.mean(X), 10.9)
 checkValues("median(X1)", stats.median(X), 11.15)
 mo = stats.mode(X)
-if (len(mo) == 2) and (mo[1] == 4.1) and (mo[0] == 15.5):
+if (len(mo) == 2) and (mo[0] == 4.1) and (mo[1] == 15.5):
     print ("mode(X1) OK")
 else:
     print ("mode(X1) WRONG, not two: 4.1 and 15.5 but {0}".format(mo))
    
 checkValues("stdDev(X1)", stats.stdDev(X), 5.613)
 checkValues("coeffVar(X1)", stats.coeffVar(X), 0.515)
+checkValues("covariance(X1,X1)", stats.covariance(X,X), 36.003)
 
 
 X2 = [10, 4, 12, 15, 20, 5, 7]
@@ -54,11 +55,14 @@ X5= [1, 2, 4, 5, 8]
 print ("===5. Test Case X5= ", X5)
 checkValues("stdDev(X5)", stats.stdDev(X5), 2.449)
 checkValues("coeffVar(X5)", stats.coeffVar(X5), 0.612)
+checkValues("covariance(X3,X5)", stats.covariance(X3,X5), 8.75)
+
 
 X6= [100, 200, 400, 500, 800] 
 print ("===6. Test Case X6= X5*100", X6)
 checkValues("stdDev(X6)", stats.stdDev(X6), 244.949) # as X5 * 100
 checkValues("coeffVar(X6)", stats.coeffVar(X6), 0.612) # same as X5
+checkValues("covariance(X6,X5)", stats.covariance(X6,X5), 750)
 
 X7 = [x + 100 for x in X5]
 print ("===7. Test Case X7= X5+100 = ", X7)
@@ -69,6 +73,7 @@ X8 = [-1, -2, -4, -5, -8]
 print ("===8. Test Case X8 = -X5 = ", X8)
 checkValues("stdDev(X8)", stats.stdDev(X8), 2.449)  # same as X5
 checkValues("coeffVar(X8)", stats.coeffVar(X8), -0.612)
+checkValues("covariance(X8,X5)", stats.covariance(X8,X5), -7.5)
 
 X9 = [6,7,15,36,39, 40, 41,42,43,47,49]
 print("===9. Test case X9 (odd) = ", X9)
@@ -87,3 +92,8 @@ print("===11. Test case X11 (even) = ", X11)
 (lo,up) = stats.quartiles(X11)
 checkValues("lower Q", lo, 15.1)
 checkValues("upper Q", up, 40)
+
+X12 = [x * 2 for x in X5]
+print("===12. Test case X12 (X5 * 2) = ", X12)
+checkValues("covariance(X5,X5)", stats.covariance(X5,X5), 7.5)
+checkValues("covariance(X12,X5)", stats.covariance(X12,X5), 15)

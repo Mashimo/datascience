@@ -45,7 +45,11 @@ def _getOccurencies(dataPoints):
                     
     return listOfTerms    
 
-
+def _diff_mean(x, precision=3):
+      # given a x data set, return an array with the distance between each
+	# data point in x and the mean of the input data set x.
+	x_bar = mean(x, precision)
+	return [x_i - x_bar for x_i in x]
     
 # === Measures of central tendency (averages) ===
      
@@ -202,6 +206,26 @@ def summary(dataPoints):
     print ("Upper Qu.: ", quartiles(dataPoints)[1])
     print ("Max      : ", max(dataPoints))
     return "That's all" # this avoids printing None
+    
+# === Measures of relation ===
+def covariance(x, y, precision=3):
+    # given two data sets x and y, return their linear relationship
+    
+    if not x or not y:
+        raise StatsError('no data points passed')
+
+    n = len(x)
+
+    if (n == 1):
+        raise StatsError('Too few data points')
+        
+    if n != len(y):
+        raise StatsError('the two datasets must have the same length')
+        
+    vectorsProduct = sum(i*j for i,j in 
+                         zip(_diff_mean(x, precision),_diff_mean(y, precision)))
+    return round(vectorsProduct / (n - 1), precision)
+    # using numpy : return np.dot(_diff_mean(x), _diff_mean(y)) / (n - 1)
 
 # === Examples of usage : python stats.py ===
 if __name__ == "__main__":
@@ -218,6 +242,7 @@ if __name__ == "__main__":
     print ("stdDev(X) = ", stdDev(X), " and shall be 5.613")
     print ("coeffVar(X) = ", coeffVar(X), " and shall be 0.515")
     print ("range(X) = ", range(X), " and shall be 16.1")
+    print ("covariance(X,X) = ", covariance(X,X), " and shall be around 36")
     print ("--------------")
     print ("summary(X):")
-    summary(X)
+    summary(X)    
