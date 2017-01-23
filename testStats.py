@@ -5,7 +5,7 @@ def checkValues(text, valueCurrent, valueExpected):
     if valueCurrent == valueExpected:
         print (text, " OK")
     else:
-        print (text, " WRONG, not {0} but {1}".format(valueExpected, valueCurrent))
+        print (text, " WRONG!!, not {0} but {1}".format(valueExpected, valueCurrent))
 
     
 # === Acceptance tests ===
@@ -19,11 +19,12 @@ mo = stats.mode(X)
 if (len(mo) == 2) and (mo[0] == 4.1) and (mo[1] == 15.5):
     print ("mode(X1) OK")
 else:
-    print ("mode(X1) WRONG, not two: 4.1 and 15.5 but {0}".format(mo))
+    print ("mode(X1) WRONG!!, not two: 4.1 and 15.5 but {0}".format(mo))
    
 checkValues("stdDev(X1)", stats.stdDev(X), 5.613)
 checkValues("coeffVar(X1)", stats.coeffVar(X), 0.515)
 checkValues("covariance(X1,X1)", stats.covariance(X,X), 36.003)
+checkValues("correlation(X1,X1)", stats.correlation(X,X), 1)
 
 
 X2 = [10, 4, 12, 15, 20, 5, 7]
@@ -42,7 +43,7 @@ mo = stats.mode(X3)
 if (len(mo) == 1) and (mo[0] == 10):
     print ("mode(X3) OK")
 else:
-    print ("mode(X3) WRONG, not one mode = {0} but {1}".format(10, mo))
+    print ("mode(X3) WRONG!!, not one mode = {0} but {1}".format(10, mo))
     
 checkValues("stdDev(X3)", stats.stdDev(X3), 3.162)
 
@@ -56,6 +57,7 @@ print ("===5. Test Case X5= ", X5)
 checkValues("stdDev(X5)", stats.stdDev(X5), 2.449)
 checkValues("coeffVar(X5)", stats.coeffVar(X5), 0.612)
 checkValues("covariance(X3,X5)", stats.covariance(X3,X5), 8.75)
+checkValues("correlation(X3,X5)", stats.correlation(X3,X5), 0.904)
 
 
 X6= [100, 200, 400, 500, 800] 
@@ -63,6 +65,7 @@ print ("===6. Test Case X6= X5*100", X6)
 checkValues("stdDev(X6)", stats.stdDev(X6), 244.949) # as X5 * 100
 checkValues("coeffVar(X6)", stats.coeffVar(X6), 0.612) # same as X5
 checkValues("covariance(X6,X5)", stats.covariance(X6,X5), 750)
+checkValues("correlation(X6,X5)", stats.correlation(X6,X5), 1)
 
 X7 = [x + 100 for x in X5]
 print ("===7. Test Case X7= X5+100 = ", X7)
@@ -74,6 +77,7 @@ print ("===8. Test Case X8 = -X5 = ", X8)
 checkValues("stdDev(X8)", stats.stdDev(X8), 2.449)  # same as X5
 checkValues("coeffVar(X8)", stats.coeffVar(X8), -0.612)
 checkValues("covariance(X8,X5)", stats.covariance(X8,X5), -7.5)
+checkValues("correlation(X8,X5)", stats.correlation(X8,X5), -1)
 
 X9 = [6,7,15,36,39, 40, 41,42,43,47,49]
 print("===9. Test case X9 (odd) = ", X9)

@@ -16,8 +16,7 @@ class statsTest(unittest.TestCase):
         
     def testEmptyMean(self):
             # passing empty list to mean() must raise exception
-        Z = []
-        self.assertRaises(TypeError, stats.mean, *Z)
+        self.assertRaises(stats.StatsError, stats.mean, [])
         
     def testSingleMean(self):
             # passing only one data point to mean() must return the same value
@@ -35,8 +34,7 @@ class statsTest(unittest.TestCase):
         
     def testEmptyMedian(self):
             # passing empty list to median() must raise exception
-        Z = []
-        self.assertRaises(TypeError, stats.mean, *Z)
+        self.assertRaises(stats.StatsError, stats.mean, [])
 
     def testSingleMedian(self):
             # passing only one data point to median() must return the same value
@@ -46,8 +44,7 @@ class statsTest(unittest.TestCase):
 
     def testEmptyMode(self):
             # passing empty list to mode() must raise exception
-        Z = []
-        self.assertRaises(TypeError, stats.mode, *Z)
+        self.assertRaises(stats.StatsError, stats.mode, [])
 
     def testSingleMode(self):
             # passing only one data point to mode() must return a list with that value
@@ -57,8 +54,7 @@ class statsTest(unittest.TestCase):
 
     def testEmptyStdDev(self):
             # passing empty list to stdDev() must raise exception
-        Z = []
-        self.assertRaises(TypeError, stats.stdDev, *Z)
+        self.assertRaises(stats.StatsError, stats.stdDev, [])
       
     def testSingleStdDev(self):
             # passing only one data point to stdDev() must return zero (no deviation!)
@@ -76,13 +72,11 @@ class statsTest(unittest.TestCase):
 
     def testEmptyCoeffVar(self):
             # passing empty list must raise exception
-        Z = []
-        self.assertRaises(TypeError, stats.coeffVar, *Z)
+        self.assertRaises(stats.StatsError, stats.coeffVar, [])
 
     def testZeroMeanCoeffVar(self):
             # passing mixed list with mean=0 must raise exception
-        Z = [-3,0,3]
-        self.assertRaises(TypeError, stats.coeffVar, *Z)
+        self.assertRaises(stats.StatsError, stats.coeffVar, [-3,0,3])
 
     def testSingleCoeffVar(self):
             # passing only one data point must return zero (no deviation!)
@@ -100,8 +94,7 @@ class statsTest(unittest.TestCase):
     
     def testRange(self):
                 # passing empty list must raise exception
-        Z = []
-        self.assertRaises(TypeError, stats.range, *Z)
+        self.assertRaises(stats.StatsError, stats.range, [])
         
     def testSingleRange(self):
             # passing only one data point must return zero
@@ -111,28 +104,43 @@ class statsTest(unittest.TestCase):
             # passing two equal data points must return zero
         self.assertEqual(stats.range([5.3,5.3]), 0.0)
         
-    # relations
+    # covariance
+    def testCovarianceInput(self):
+                # passing too few parameters must raise exception
+        self.assertRaises(TypeError, stats.covariance, [])
+
     def testCovarianceNull(self):
-                # passing empty list must raise exception
-        Z = []
-        self.assertRaises(TypeError, stats.covariance, *Z)
+                # passing empty lists must raise exception
+        self.assertRaises(stats.StatsError, stats.covariance, [], [])
 
     def testCovarianceOne(self):
-                # passing only one list must raise exception
-        Z = [1,2]
-        self.assertRaises(TypeError, stats.covariance, *Z)
+                # passing only one point must raise exception
+        self.assertRaises(stats.StatsError, stats.covariance, [1], [2])
         
     def testCovarianceDifferent(self):
-                # passing only one list must raise exception
-        Z = [1,2]
-        W = [3]
-        self.assertRaises(TypeError, stats.covariance, *Z, *W)
+                # passing different lenghts must raise exception
+        self.assertRaises(stats.StatsError, stats.covariance, [1,2], [3])
 
-    def testSinglecovariance(self):
-            # passing only one data point must return zero
-        Z = [2]
-        self.assertRaises(TypeError, stats.covariance, *Z)        
+    def testSingleCovariance(self):
+            # passing only one data point must raise exception
+        self.assertRaises(stats.StatsError, stats.covariance, [2], [3])        
 
+    #correlation
+    def testCorrInput(self):
+                # passing too few parameters must raise exception
+        self.assertRaises(TypeError, stats.correlation, [])
+
+    def testCorrNull(self):
+                # passing empty lists must raise exception
+        self.assertRaises(stats.StatsError, stats.correlation, [], [])
+
+    def testCorrDifferent(self):
+                # passing different lengths must raise exception
+        self.assertRaises(stats.StatsError, stats.correlation, [1,2,3], [3,4,5,6])
+        
+    def testSingleCorr(self):
+            # passing only one data point must raise exception
+        self.assertRaises(stats.StatsError, stats.correlation, [2], [3])        
 
 if __name__ == "__main__":
     unittest.main()

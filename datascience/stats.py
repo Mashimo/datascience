@@ -45,10 +45,10 @@ def _getOccurencies(dataPoints):
                     
     return listOfTerms    
 
-def _diff_mean(x, precision=3):
+def _diff_mean(x):
       # given a x data set, return an array with the distance between each
 	# data point in x and the mean of the input data set x.
-	x_bar = mean(x, precision)
+	x_bar = mean(x)
 	return [x_i - x_bar for x_i in x]
     
 # === Measures of central tendency (averages) ===
@@ -209,6 +209,15 @@ def summary(dataPoints):
     
 # === Measures of relation ===
 def covariance(x, y, precision=3):
+    """
+    Covariance of two variables
+    Arguments:
+        x,y: lists of data points, int or float
+        precision: digits number of precision for resul (default=3)
+
+    Returns:
+        the covariance (float)
+    """
     # given two data sets x and y, return their linear relationship
     
     if not x or not y:
@@ -222,10 +231,41 @@ def covariance(x, y, precision=3):
     if n != len(y):
         raise StatsError('the two datasets must have the same length')
         
-    vectorsProduct = sum(i*j for i,j in 
-                         zip(_diff_mean(x, precision),_diff_mean(y, precision)))
+    vectorsProduct = sum(i*j for i,j in zip(_diff_mean(x),_diff_mean(y)))
     return round(vectorsProduct / (n - 1), precision)
     # using numpy : return np.dot(_diff_mean(x), _diff_mean(y)) / (n - 1)
+
+def correlation(x, y, precision=3):
+    """
+    Correlation between two variables
+    Arguments:
+        x,y: lists of data points (sample), int or float
+        precision: digits number of precision for resul (default=3)
+
+    Returns:
+        the correlation (float) as Pearson coefficient
+    """
+
+    if not x or not y:
+        raise StatsError('no data points passed')
+        
+    if len(x) != len(y):
+        raise StatsError('the two datasets must have the same length')
+
+    if len(x) < 3:
+        raise StatsError('Too few data points')
+
+        
+    x_diff = _diff_mean(x)
+    y_diff = _diff_mean(y)
+
+
+    sum_xy = sum([i * j for i, j in zip(x_diff, y_diff)])
+    x_diff_sq = sum([i**2 for i in x_diff])
+    y_diff_sq = sum([i**2 for i in y_diff])
+
+
+    return round(sum_xy / ((x_diff_sq * y_diff_sq)**0.5), precision)
 
 # === Examples of usage : python stats.py ===
 if __name__ == "__main__":
@@ -243,6 +283,7 @@ if __name__ == "__main__":
     print ("coeffVar(X) = ", coeffVar(X), " and shall be 0.515")
     print ("range(X) = ", range(X), " and shall be 16.1")
     print ("covariance(X,X) = ", covariance(X,X), " and shall be around 36")
+    print(correlation(X,X))
     print ("--------------")
     print ("summary(X):")
     summary(X)    
