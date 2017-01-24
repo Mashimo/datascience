@@ -3,6 +3,7 @@ import stats
 
 # === Unit tests for stats ===
 # use like this: python stats_unittest.py
+# acceptance tests are in the file testStats.py
 
   # define a class inheriting from unittest.TestCase  
   # that will contain as methods all the unit tests.
@@ -125,7 +126,7 @@ class statsTest(unittest.TestCase):
             # passing only one data point must raise exception
         self.assertRaises(stats.StatsError, stats.covariance, [2], [3])        
 
-    #correlation
+    #correlation from sample
     def testCorrInput(self):
                 # passing too few parameters must raise exception
         self.assertRaises(TypeError, stats.correlation, [])
@@ -141,6 +142,23 @@ class statsTest(unittest.TestCase):
     def testSingleCorr(self):
             # passing only one data point must raise exception
         self.assertRaises(stats.StatsError, stats.correlation, [2], [3])        
+
+            #correlation from population
+    def testCorrPInput(self):
+                # passing too few parameters must raise exception
+        self.assertRaises(TypeError, stats.correlationPop, [])
+
+    def testCorrPNull(self):
+                # passing empty lists must raise exception
+        self.assertRaises(stats.StatsError, stats.correlationPop, [], [])
+
+    def testCorrPDifferent(self):
+                # passing different lengths must raise exception
+        self.assertRaises(stats.StatsError, stats.correlationPop, [1,2,3], [3,4,5,6])
+        
+    def testSingleCorrP(self):
+            # passing only one data point must return zero 
+        self.assertEqual(stats.correlationPop([1], [2]), 0)        
 
 if __name__ == "__main__":
     unittest.main()

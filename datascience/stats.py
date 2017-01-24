@@ -237,7 +237,7 @@ def covariance(x, y, precision=3):
 
 def correlation(x, y, precision=3):
     """
-    Correlation between two variables
+    Correlation between two variables from a sample
     Arguments:
         x,y: lists of data points (sample), int or float
         precision: digits number of precision for resul (default=3)
@@ -267,6 +267,26 @@ def correlation(x, y, precision=3):
 
     return round(sum_xy / ((x_diff_sq * y_diff_sq)**0.5), precision)
 
+    
+def correlationPop(x, y, precision = 3):
+    """
+    Correlation between two variables from a population
+    Arguments:
+        x,y: lists of data points (sample), int or float
+        precision: digits number of precision for resul (default=3)
+
+    Returns:
+        the correlation (float) using the covariance
+    """
+
+    stdev_x = stdDev(x)
+    stdev_y = stdDev(y)
+    if stdev_x > 0 and stdev_y > 0:
+        return covariance(x, y) / (stdev_x * stdev_y)
+    else:
+        return 0    # if no variation, correlation is zero
+
+
 # === Examples of usage : python stats.py ===
 if __name__ == "__main__":
     
@@ -283,7 +303,6 @@ if __name__ == "__main__":
     print ("coeffVar(X) = ", coeffVar(X), " and shall be 0.515")
     print ("range(X) = ", range(X), " and shall be 16.1")
     print ("covariance(X,X) = ", covariance(X,X), " and shall be around 36")
-    print(correlation(X,X))
     print ("--------------")
     print ("summary(X):")
     summary(X)    
