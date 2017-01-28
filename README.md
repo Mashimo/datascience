@@ -10,6 +10,7 @@ Contains the Stats module
 ## Regression
 Examples and tutorials for supervised regression
 * [Univariate linear regression] (https://mashimo.wordpress.com/2014/02/16/linear-regression-an-introduction/)
+* [Multiple linear regression] (01-Regression/moneyball.ipynb)
 
 ## Classification
 [Example in R](http://mashimo.github.io/JHU-predict-class-wle/)
