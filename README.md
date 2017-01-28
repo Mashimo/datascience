@@ -9,7 +9,7 @@ Contains the Stats module
 
 ## Regression
 Examples and tutorials for supervised regression
-* [Univariate linear regression] (https://mashimo.wordpress.com/2014/02/16/linear-regression-an-introduction/)
+* [Univariate linear regression] (01-Regression/LinearRegression.ipynb)
 * [Multiple linear regression] (01-Regression/moneyball.ipynb)
 
 ## Classification
@@ -17,7 +17,7 @@ Examples and tutorials for supervised regression
 
 ## NLP
 Examples and tutorials for Natural Language Processing
-* [Word counting: the Hello Worlds of NLP](https://mashimo.wordpress.com/2014/05/11/the-hello-world-of-text-processing/)
+* [Word counting: the Hello Worlds of NLP](03-NLP/helloworld-nlp.ipynb)
 
 ## visualization
 Contains data visualization examples
