@@ -11,6 +11,7 @@ Contains the Stats module
 Examples and tutorials for supervised regression
 * [Univariate linear regression] (01-Regression/LinearRegression.ipynb)
 * [Multiple linear regression] (01-Regression/moneyball.ipynb)
+* [Inference for linear regression] (01-Regression/LRinference)
 
 ## Classification
 [Example in R](http://mashimo.github.io/JHU-predict-class-wle/)
