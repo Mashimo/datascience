@@ -19,6 +19,7 @@ Examples and tutorials for supervised regression
 ## NLP
 Examples and tutorials for Natural Language Processing
 * [Word counting: the Hello Worlds of NLP](03-NLP/helloworld-nlp.ipynb)
+* [Distributed word counting with Spark](03-NLP/word_count_dataframe.ipynb)
 
 ## visualization
 Contains data visualization examples
