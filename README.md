@@ -1,17 +1,17 @@
 # Grassroots Machine Learning
 A collection of examples and tutorials mainly in Python
-## datascience
+## datascience library
 Simple library replicating several algorithms for educational purpose.  
-Contains the Stats module
+* Contains the Stats module
 
 ## TidyData
 [Examples and tutorials for data wrangling](http://mashimo.github.io/TidyData-Tutorial/)
 
 ## Regression
 Examples and tutorials for supervised regression
-* [Univariate linear regression] (01-Regression/LinearRegression.ipynb)
-* [Multiple linear regression] (01-Regression/moneyball.ipynb)
-* [Inference for linear regression] (01-Regression/LRinference.ipynb)
+* [Univariate linear regression](01-Regression/LinearRegression.ipynb)
+* [Multiple linear regression](01-Regression/moneyball.ipynb)
+* [Inference for linear regression](01-Regression/LRinference.ipynb)
 
 ## Classification
 [Example in R](http://mashimo.github.io/JHU-predict-class-wle/)
