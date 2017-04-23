@@ -17,11 +17,12 @@ Examples and tutorials for supervised regression
 ## Classify
 Examples and tutorials for supervised classification
 * [Multi-class logistic regression in R](http://mashimo.github.io/JHU-predict-class-wle/)
+* [Classification using K-nearest neighbours in Python](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd)
 * Classification using Artificial Neural Network
 
 ## Connect
 Examples and tutorials for un-supervised clustering
-* [K-means in Python](https://gist.github.com/Mashimo/39436d4c94d5827e81a18b286b832b4c)
+* [Clustering using K-means in Python](https://gist.github.com/Mashimo/39436d4c94d5827e81a18b286b832b4c)
 
 ## NLP
 Examples and tutorials for Natural Language Processing
