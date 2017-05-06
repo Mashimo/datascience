@@ -13,29 +13,36 @@ Examples and tutorials for supervised regression
 * [Univariate linear regression](01-Regression/LinearRegression.ipynb)
 * [Multiple linear regression](01-Regression/moneyball.ipynb)
 * [Inference for linear regression](01-Regression/LRinference.ipynb)
+* Feature selection
 
 ## Classify
 Examples and tutorials for supervised classification
 * [Multi-class logistic regression in R](http://mashimo.github.io/JHU-predict-class-wle/)
 * [Classification using K-nearest neighbours in Python](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd)
+  * [K-nn with hyper-parameters](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-hyperparameters-py)
+  * [K-nn with data reduction](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-reduction-py)
 * Classification using Artificial Neural Network
 
 ## Connect
 Examples and tutorials for un-supervised clustering
 * [Clustering using K-means in Python](https://gist.github.com/Mashimo/39436d4c94d5827e81a18b286b832b4c)
 
+## Learn
+Examples and tutorials for reinforcement learning, software agents
+
 ## NLP
 Examples and tutorials for Natural Language Processing
 * [Word counting: the Hello Worlds of NLP](03-NLP/helloworld-nlp.ipynb)
 * [Distributed word counting with Spark](03-NLP/word_count_dataframe.ipynb)
+* Text analyser (Python and Flask)
 
 ## Visualization
 Contains data visualization examples
 * Bar Chart
-* Box plot 
+* Box plot
 * Scatter plot
 * [Histograms, 2D and 3D scatter, parallel coordinates, Andrew’s curves](https://gist.github.com/Mashimo/d8bfb68c7582bc81b293d6ad7caec3ef)
 
-## Data reduction
+## Data dimensionality reduction
 * [PCA](https://gist.github.com/Mashimo/69f0972d51358d65f088a7147dfc5ff1)
 * [Isomap](https://gist.github.com/Mashimo/b8a8d4dc18bf6875c8547134b543898f)
