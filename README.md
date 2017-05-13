@@ -13,7 +13,7 @@ Examples and tutorials for supervised regression
 * [Univariate linear regression](01-Regression/LinearRegression.ipynb)
 * [Multiple linear regression](01-Regression/moneyball.ipynb)
 * [Inference for linear regression](01-Regression/LRinference.ipynb)
-* Feature selection
+* [Feature selection](https://github.com/Mashimo/datascience/blob/master/01-Regression/LRfeatures.ipynb)
 
 ## Classify
 Examples and tutorials for supervised classification
