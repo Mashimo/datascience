@@ -22,6 +22,7 @@ Examples and tutorials for supervised classification
   * [K-nn with hyper-parameters](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-hyperparameters-py)
   * [K-nn with dimensionality reduction](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-reduction-py)
 * [Classification using Support Vector Machines](https://gist.github.com/Mashimo/e8d8c268178037149096e42a001d23c9)
+* [Classification using Decision Tree](https://gist.github.com/Mashimo/fb9d2cf2b889d9b33aa9af7a23e2d24f)
 * Classification using Artificial Neural Network
 
 ## Connect
