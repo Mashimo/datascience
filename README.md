@@ -14,15 +14,18 @@ Examples and tutorials for supervised regression
 * [Multiple linear regression](01-Regression/moneyball.ipynb)
 * [Inference for linear regression](01-Regression/LRinference.ipynb)
 * [Feature selection](https://github.com/Mashimo/datascience/blob/master/01-Regression/LRfeatures.ipynb)
+* Forecast time series
 
 ## Classify
 Examples and tutorials for supervised classification
+* Logistic Regression
 * [Multi-class logistic regression in R](http://mashimo.github.io/JHU-predict-class-wle/)
 * [Classification using K-nearest neighbours in Python](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd)
   * [K-nn with hyper-parameters](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-hyperparameters-py)
   * [K-nn with dimensionality reduction](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-reduction-py)
 * [Classification using Support Vector Machines](https://gist.github.com/Mashimo/e8d8c268178037149096e42a001d23c9)
 * [Classification using Decision Tree](https://gist.github.com/Mashimo/fb9d2cf2b889d9b33aa9af7a23e2d24f)
+* [Classification using Random Forest](https://gist.github.com/Mashimo/8e64bd1a2257b9d10d88ab4b6d3cb1e4?)
 * Classification using Artificial Neural Network
 
 ## Connect
