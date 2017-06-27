@@ -101,3 +101,15 @@ X12 = [x * 2 for x in X5]
 print("===12. Test case X12 (X5 * 2) = ", X12)
 checkValues("covariance(X5,X5)", stats.covariance(X5,X5), 7.5)
 checkValues("covariance(X12,X5)", stats.covariance(X12,X5), 15)
+
+checkValues("correlation(X5,X5)", stats.correlation(X5,X5), 1)
+checkValues("correlation(X12,X5)", stats.correlation(X12,X5), 1)
+
+X13 = [300,50,12,4,1]
+print("===13. Test case X13 = ", X13)
+checkValues("correlation(X5,X13)", stats.correlation(X5,X13), -0.706)
+
+X14 = [3,1,3,9]
+X15 = [4,4,8,8]
+print("===14. Test case X14 = ", X14, "X15 =", X15)
+checkValues("correlation using covariance (X14,X15)", stats.correlation(X14,X15), 0.667)

@@ -303,6 +303,9 @@ if __name__ == "__main__":
     print ("coeffVar(X) = ", coeffVar(X), " and shall be 0.515")
     print ("range(X) = ", range(X), " and shall be 16.1")
     print ("covariance(X,X) = ", covariance(X,X), " and shall be around 36")
+    print ("correlation(X,X) = ", correlation(X,X), " and shall be 1 ")
+    print ("correlation population(X,X) = ", correlationPop(X,X), " and shall be around 1.14")
+
     print ("--------------")
     print ("summary(X):")
     summary(X)    
