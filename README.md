@@ -18,7 +18,8 @@ Examples and tutorials for supervised regression
 
 ## Classify
 Examples and tutorials for supervised classification
-* [Logistic Regression](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegression.ipynb)
+* [Logistic Regression from scratch](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegression.ipynb)
+* [Logistic Regression using statsmodels](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegressionSM.ipynb)
 * [Multi-class logistic regression in R](http://mashimo.github.io/JHU-predict-class-wle/)
 * [Classification using K-nearest neighbours in Python](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd)
   * [K-nn with hyper-parameters](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-hyperparameters-py)
@@ -29,7 +30,10 @@ Examples and tutorials for supervised classification
 * Classification using Artificial Neural Network
 
 ## Connect
-Examples and tutorials for un-supervised clustering
+Examples and tutorials for supervised connection
+* Recommender systems
+
+Examples and tutorials for un-supervised connection
 * [Clustering using K-means in Python](https://gist.github.com/Mashimo/39436d4c94d5827e81a18b286b832b4c)
 
 ## Learn
