@@ -2,7 +2,7 @@
 A collection of examples and tutorials mainly in Python
 ## datascience library
 Simple library replicating several algorithms for educational purpose.  
-* Contains the Stats module
+* Contains the Stats module ([Blog posts](https://wordpress.com/page/mashimo.wordpress.com/1603))
 
 ## TidyData
 * [Examples and tutorials for data wrangling](http://mashimo.github.io/TidyData-Tutorial/)
@@ -14,6 +14,7 @@ Examples and tutorials for supervised regression
 * [Multiple linear regression](01-Regression/moneyball.ipynb)
 * [Inference for linear regression](01-Regression/LRinference.ipynb)
 * [Feature selection](https://github.com/Mashimo/datascience/blob/master/01-Regression/LRfeatures.ipynb)
+* Overfitting
 * Forecast time series
 
 ## Classify
@@ -29,6 +30,13 @@ Examples and tutorials for supervised classification
 * [Classification using Random Forest](https://gist.github.com/Mashimo/8e64bd1a2257b9d10d88ab4b6d3cb1e4?)
 * Classification using Artificial Neural Network
 
+### Classify Text using NLP
+Examples and tutorials for Natural Language Processing classification
+* [Word counting: the Hello Worlds of NLP](03-NLP/helloworld-nlp.ipynb)
+* [Distributed word counting with Spark](03-NLP/word_count_dataframe.ipynb)
+* [Text analyser (Python and Flask)](https://github.com/Mashimo/NLP3o)
+* Sentiment Analysis
+
 ## Connect
 Examples and tutorials for supervised connection
 * Recommender systems
@@ -39,11 +47,6 @@ Examples and tutorials for un-supervised connection
 ## Learn
 Examples and tutorials for reinforcement learning, software agents
 
-## NLP
-Examples and tutorials for Natural Language Processing
-* [Word counting: the Hello Worlds of NLP](03-NLP/helloworld-nlp.ipynb)
-* [Distributed word counting with Spark](03-NLP/word_count_dataframe.ipynb)
-* Text analyser (Python and Flask)
 
 ## Visualization
 Contains data visualization examples
