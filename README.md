@@ -14,7 +14,7 @@ Examples and tutorials for supervised regression
 * [Multiple linear regression](01-Regression/moneyball.ipynb)
 * [Inference for linear regression](01-Regression/LRinference.ipynb)
 * [Feature selection](https://github.com/Mashimo/datascience/blob/master/01-Regression/LRfeatures.ipynb)
-* Overfitting
+* [Overfitting](https://github.com/Mashimo/datascience/blob/master/01-Regression/overfit.ipynb)
 * Forecast time series
 
 ## Classify
