@@ -35,6 +35,7 @@ Examples and tutorials for Natural Language Processing classification
 * [Word counting: the Hello Worlds of NLP](03-NLP/helloworld-nlp.ipynb)
 * [Distributed word counting with Spark](03-NLP/word_count_dataframe.ipynb)
 * [Text analyser (Python and Flask)](https://github.com/Mashimo/NLP3o)
+* [Introduction to NLTK](03-NLP/introNLTK.ipynb)
 * Sentiment Analysis
 
 ## Connect
