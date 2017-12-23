@@ -16,8 +16,7 @@ Examples and tutorials for supervised regression
 * [Feature selection](https://github.com/Mashimo/datascience/blob/master/01-Regression/LRfeatures.ipynb)
 * [Overfitting](https://github.com/Mashimo/datascience/blob/master/01-Regression/overfit.ipynb)
 * [Cross-validation](https://github.com/Mashimo/datascience/blob/master/01-Regression/CV.ipynb)
-* Bootstrap
-* Regularisation
+* [Regularisation](https://github.com/Mashimo/datascience/blob/master/01-Regression/Regularisation.ipynb)
 * Forecast time series
 
 ## Classify
