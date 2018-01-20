@@ -17,6 +17,7 @@ Examples and tutorials for supervised regression
 * [Overfitting](https://github.com/Mashimo/datascience/blob/master/01-Regression/overfit.ipynb)
 * [Cross-validation](https://github.com/Mashimo/datascience/blob/master/01-Regression/CV.ipynb)
 * [Regularisation](https://github.com/Mashimo/datascience/blob/master/01-Regression/Regularisation.ipynb)
+* An example: [rebuild audio using linear regression](https://github.com/Mashimo/datascience/blob/master/01-Regression/LRaudio.ipynb)
 * Forecast time series
 
 ## Classify
