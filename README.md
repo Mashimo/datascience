@@ -24,6 +24,7 @@ Examples and tutorials for supervised regression
 Examples and tutorials for supervised classification
 * [Logistic Regression from scratch](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegression.ipynb)
 * [Logistic Regression using statsmodels](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegressionSM.ipynb)
+* [Logistic Regression using SKlearn](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegressionSKL.ipynb)
 * [Multi-class logistic regression in R](http://mashimo.github.io/JHU-predict-class-wle/)
 * [Classification using K-nearest neighbours in Python](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd)
   * [K-nn with hyper-parameters](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-hyperparameters-py)
