@@ -18,11 +18,12 @@ Examples and tutorials for supervised regression
 * [Cross-validation](https://github.com/Mashimo/datascience/blob/master/01-Regression/CV.ipynb)
 * [Regularisation](https://github.com/Mashimo/datascience/blob/master/01-Regression/Regularisation.ipynb)
 * An example: [rebuild audio using linear regression](https://github.com/Mashimo/datascience/blob/master/01-Regression/LRaudio.ipynb)
-* Forecast time series
+*  [Time series: the basics](https://github.com/Mashimo/datascience/blob/master/01-Regression/timeSeriesBasic.ipynb)
+* [A time series example](https://github.com/Mashimo/datascience/blob/master/01-Regression/dairy-time-forecast.ipynb)
 
 ## Classify
 Examples and tutorials for supervised classification
-* [Logistic Regression from scratch](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegression.ipynb)
+* [Logistic Regression from ground up](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegression.ipynb)
 * [Logistic Regression using statsmodels](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegressionSM.ipynb)
 * [Logistic Regression using SKlearn](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegressionSKL.ipynb)
 * [Multi-class logistic regression in R](http://mashimo.github.io/JHU-predict-class-wle/)
