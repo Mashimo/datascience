@@ -1,5 +1,7 @@
 # Grassroots Machine Learning
-A collection of examples and tutorials mainly in Python
+A collection of examples and tutorials mainly in Python.  
+There are [articles for each notebook](https://mashimo.wordpress.com/applied-machine-learning/) that go deeper into the topic.
+
 ## datascience library
 Simple library replicating several algorithms for educational purpose.  
 * Contains the Stats module ([Blog posts](https://wordpress.com/page/mashimo.wordpress.com/1603))
