@@ -1,5 +1,7 @@
 # Grassroots Machine Learning
-A collection of examples and tutorials mainly in Python
+A collection of examples and tutorials mainly in Python.  
+There are [articles for each notebook](https://mashimo.wordpress.com/applied-machine-learning/) that go deeper into the topic.
+
 ## datascience library
 Simple library replicating several algorithms for educational purpose.  
 * Contains the Stats module ([Blog posts](https://wordpress.com/page/mashimo.wordpress.com/1603))
@@ -28,13 +30,14 @@ Examples and tutorials for supervised classification
 * [Logistic Regression using SKlearn](https://github.com/Mashimo/datascience/blob/master/01-Regression/LogisticRegressionSKL.ipynb)
 * [Multi-class Logistic Regression](https://github.com/Mashimo/datascience/blob/master/01-Regression/multipleLogRegSky.ipynb)
 * [Multi-class logistic regression in R](http://mashimo.github.io/JHU-predict-class-wle/)
-* [Classification using K-nearest neighbours in Python](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd)
-  * [K-nn with hyper-parameters](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-hyperparameters-py)
-  * [K-nn with dimensionality reduction](https://gist.github.com/Mashimo/3b412bd629d17a79a6dd5c44330508cd#file-knn-with-reduction-py)
+* [Classification using K-nearest neighbours in Python](02-Classification/knn.ipynb)
 * [Classification using Support Vector Machines](https://gist.github.com/Mashimo/e8d8c268178037149096e42a001d23c9)
-* [Classification using Decision Tree](https://gist.github.com/Mashimo/fb9d2cf2b889d9b33aa9af7a23e2d24f)
-* [Classification using Random Forest](https://gist.github.com/Mashimo/8e64bd1a2257b9d10d88ab4b6d3cb1e4?)
+* [Classification using Decision Tree](02-Classification/trees.ipynb)
+* [Classification using Random Forest](02-Classification/forest.ipynb)
 * [Classification using Artificial Neural Network](02-Classification/catNoCat.ipynb)
+
+### Data dimensionality reduction
+* [PCA & Isomap algorithms](02-Classification/isomap-pca.ipynb)
 
 ### Classify Text using NLP
 Examples and tutorials for Natural Language Processing classification
@@ -42,7 +45,9 @@ Examples and tutorials for Natural Language Processing classification
 * [Distributed word counting with Spark](03-NLP/word_count_dataframe.ipynb)
 * [Text analyser (Python and Flask)](https://github.com/Mashimo/NLP3o)
 * [Introduction to NLTK](03-NLP/introNLTK.ipynb)
-* Sentiment Analysis
+* [Sentiment Analysis](02-Classification/tweets.ipynb)
+
+
 
 ## Connect
 Examples and tutorials for supervised connection
@@ -62,6 +67,3 @@ Contains data visualization examples
 * Scatter plot
 * [Histograms, 2D and 3D scatter, parallel coordinates, Andrew’s curves](https://gist.github.com/Mashimo/d8bfb68c7582bc81b293d6ad7caec3ef)
 
-## Data dimensionality reduction
-* [PCA](https://gist.github.com/Mashimo/69f0972d51358d65f088a7147dfc5ff1)
-* [Isomap](https://gist.github.com/Mashimo/b8a8d4dc18bf6875c8547134b543898f)
