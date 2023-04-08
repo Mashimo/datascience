@@ -46,7 +46,9 @@ Examples and tutorials for Natural Language Processing classification
 * [Text analyser (Python and Flask)](https://github.com/Mashimo/NLP3o)
 * [Introduction to NLTK](03-NLP/introNLTK.ipynb)
 * [Sentiment Analysis](02-Classification/tweets.ipynb)
-
+* [Word vectors](03-NLP/word-vectors.ipynb)
+* [Part of Speeches - part I](03-NLP/POS.ipynb)
+* [Part of Speeches - part II](03-NLP/POS2.ipynb)
 
 
 ## Connect
