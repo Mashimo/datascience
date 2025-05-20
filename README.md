@@ -2,9 +2,12 @@
 A collection of examples and tutorials mainly in Python.  
 There are [articles for each notebook](https://mashimo.wordpress.com/applied-machine-learning/) that go deeper into the topic.
 
-## datascience library
+## Introduction
 Simple library replicating several algorithms for educational purpose.  
-* Contains the Stats module ([Blog posts](https://wordpress.com/page/mashimo.wordpress.com/1603))
+* Contains the [Stats module](https://github.com/Mashimo/datascience/tree/master/datascience)
+* Check the [posts about Data & Python introduction](https://mashimo.wordpress.com/applied-machine-learning/)
+* [Probability & random numbers](https://mashimo.wordpress.com/2019/01/27/montecarlo-and-pi/)
+* [Shannon's entropy](https://mashimo.wordpress.com/2024/04/26/shannons-entropy/)
 
 ## TidyData
 * [Examples and tutorials for data wrangling](http://mashimo.github.io/TidyData-Tutorial/)
