@@ -9,9 +9,14 @@ Simple library replicating several algorithms for educational purpose.
 * [Probability & random numbers](https://github.com/Mashimo/datascience/blob/master/01-Regression/prob.ipynb): and the related [blog post](https://mashimo.wordpress.com/2019/01/27/montecarlo-and-pi/)
 * [Shannon's entropy](https://github.com/Mashimo/datascience/blob/master/05-generative/entropy.ipynb): and the related [blog post](https://mashimo.wordpress.com/2024/04/26/shannons-entropy/)
 
-## TidyData
+### TidyData
 * [Examples and tutorials for data wrangling](http://mashimo.github.io/TidyData-Tutorial/)
 * [Read the NHL data](https://gist.github.com/Mashimo/11dd439d1546319e60601474fb0da0e7)
+
+### Visualization
+Contains data visualization examples
+* [Histograms, 2D and 3D scatter, parallel coordinates, Andrew’s curves](https://gist.github.com/Mashimo/d8bfb68c7582bc81b293d6ad7caec3ef)
+
 
 ## Predict
 Examples and tutorials for supervised regression
@@ -37,38 +42,46 @@ Examples and tutorials for supervised classification
 * [Classification using Support Vector Machines](https://gist.github.com/Mashimo/e8d8c268178037149096e42a001d23c9)
 * [Classification using Decision Tree](02-Classification/trees.ipynb)
 * [Classification using Random Forest](02-Classification/forest.ipynb)
-* [Classification using Artificial Neural Network](02-Classification/catNoCat.ipynb)
+* [Classification metrics and Naive Bayes](02-Classification/tweets.ipynb)
 
 ### Data dimensionality reduction
 * [PCA & Isomap algorithms](02-Classification/isomap-pca.ipynb)
 
-### Classify Text using NLP
-Examples and tutorials for Natural Language Processing classification
+## Connect
+Examples and tutorials for unsupervised connection
+* [Clustering using K-means in Python](https://gist.github.com/Mashimo/39436d4c94d5827e81a18b286b832b4c)
+
+  
+## Natural Language Processing (NLP)
+Examples and tutorials for Natural Language Processing classification and beyond
 * [Word counting: the Hello Worlds of NLP](03-NLP/helloworld-nlp.ipynb)
 * [Distributed word counting with Spark](03-NLP/word_count_dataframe.ipynb)
 * [Text analyser (Python and Flask)](https://github.com/Mashimo/NLP3o)
 * [Introduction to NLTK](03-NLP/introNLTK.ipynb)
 * [Sentiment Analysis](02-Classification/tweets.ipynb)
 * [Word vectors](03-NLP/word-vectors.ipynb)
-* [Part of Speeches - part I](03-NLP/POS.ipynb)
-* [Part of Speeches - part II](03-NLP/POS2.ipynb)
+* [Part of Speeches - Tagging](03-NLP/POS.ipynb)
+* [Part of Speeches - Advanced, using a Hidden Markov Model](03-NLP/POS2.ipynb)
 
+## Deep Learning
+Examples and tutorials using Artificial Neural Networks
+* [Classification using Artificial Neural Network](02-Classification/catNoCat.ipynb)
+* [Regularisation in Neural Networks](02-Classification/digits.ipynb)
+* An introduction to tensors
+* An introduction to Tensorflow
+* Regularisation with Tensorflow
+* Saving and loading models in Tensorflow
+* Example: classify Chinese numbers with PyTorch
+* Analyse Bitcoin price dynamics using LTSM neural networks
 
-## Connect
-Examples and tutorials for supervised connection
-* Recommender systems
-
-Examples and tutorials for un-supervised connection
-* [Clustering using K-means in Python](https://gist.github.com/Mashimo/39436d4c94d5827e81a18b286b832b4c)
 
 ## Learn
 Examples and tutorials for reinforcement learning, software agents
 
-
-## Visualization
-Contains data visualization examples
-* Bar Chart
-* Box plot
-* Scatter plot
-* [Histograms, 2D and 3D scatter, parallel coordinates, Andrew’s curves](https://gist.github.com/Mashimo/d8bfb68c7582bc81b293d6ad7caec3ef)
+## Create
+Examples and tutorials for Generative AI
+* [Markov-Shannon: a simple text generator](05-generative/markov%20shannon.ipynb)
+* [A simple generator of names using bigrams](05-generative/bigram.ipynb)
+* [Prompt Engineering](05-generative/prompts.ipynb)
+* [Audio transcription using Whisper model](05-generative/whisper.ipynb)
 
