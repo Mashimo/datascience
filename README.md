@@ -6,8 +6,8 @@ There are [articles for each notebook](https://mashimo.wordpress.com/applied-mac
 Simple library replicating several algorithms for educational purpose.  
 * Contains the [Stats module](https://github.com/Mashimo/datascience/tree/master/datascience)
 * Check the [posts about Data & Python introduction](https://mashimo.wordpress.com/applied-machine-learning/)
-* [Probability & random numbers](https://mashimo.wordpress.com/2019/01/27/montecarlo-and-pi/)
-* [Shannon's entropy](https://mashimo.wordpress.com/2024/04/26/shannons-entropy/)
+* [Probability & random numbers](https://github.com/Mashimo/datascience/blob/master/01-Regression/prob.ipynb): [blog post](https://mashimo.wordpress.com/2019/01/27/montecarlo-and-pi/)
+* [Shannon's entropy](https://github.com/Mashimo/datascience/blob/master/05-generative/entropy.ipynb): [blog post)(https://mashimo.wordpress.com/2024/04/26/shannons-entropy/)
 
 ## TidyData
 * [Examples and tutorials for data wrangling](http://mashimo.github.io/TidyData-Tutorial/)
