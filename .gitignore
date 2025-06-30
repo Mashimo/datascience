@@ -8,4 +8,17 @@ webvisualization/*
 03-NLP/.ipynb_checkpoints/
 03-NLP/wordcloud_804.txt
 03-NLP/wordcloud_1342.txt
+04-DeepLearning/.ipynb_checkpoints/
 02-Classification/.ipynb_checkpoints/
+05-generative/.ipynb_checkpoints/
+05-generative/Net.pth
+05-generative/checkpoint
+05-generative/model/*
+99-WIP/
+99-WIP/*
+images/blackrobot.jpg
+images/cute.jpeg
+images/ollama-pull.png
+images/ollama-run.png
+images/ollama.png
+outputs/*
